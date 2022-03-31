@@ -1,11 +1,14 @@
 package ru.lomov.hw;
 
 public class Item {
-   private long id;
+   private Long id;
    private int price;
    private String itemName;
 
-   public long getId() {
+   public Item() {
+   }
+
+   public Long getId() {
       return id;
    }
 
@@ -26,6 +29,12 @@ public class Item {
    }
 
    public void setItemName(String itemName) {
+      this.itemName = itemName;
+   }
+
+   public Item(long id, int price, String itemName) {
+      this.id = id;
+      this.price = price;
       this.itemName = itemName;
    }
 
